@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,800&display=swap');
+/* css reset  */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* css variables */
+:root{
+    --navbar-height: 59px;
+}
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 22px;
+}
+/* navigation bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position:relative;
+    
+    
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(11, 11, 66);
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    /* opacity: 0.4; */
+}
+/* navigation bar: logo and image  */
+#logo{
+    margin: 34px 42px;
+}
+#logo img{
+    margin: -14px 4px;
+    height: 72px;
+}
+
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    font-size: 1.3rem;
+    list-style: none;
+}
+#navbar ul li a{
+     
+    display: block;
+    padding: 3px 32px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Goblin One', cursive;
+    /* background-color: black; */
+
+}
+#navbar ul li a:hover{
+     
+color: rgb(245, 151, 151);
+background-color: rgb(8, 8, 8);
+}
+/* Home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 620px;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#home::before{
+    content: "";
+    background:url('./img/lidye-1Shk_PkNkNw-unsplash.jpg') no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 800px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Goblin One', cursive;
+    
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: 'Oswald', sans-serif;
+    
+}
+/* services containers */
+#services{
+    margin: 48px;
+    display: flex;
+}
+#services .box{
+    
+    margin: 25px 35px;
+    border: px solid brown;
+    padding: 34px;
+    background-color: #e1dede;
+    border-radius: 28px;
+    margin-bottom: 20px;
+}
+#services .box:hover{
+    
+background-color: rgb(89, 89, 177);
+color: white;
+}
+#services .box img{
+         height: 160px;
+         margin: auto;
+         display: block;
+}
+#services .box p{
+    font-family: 'JetBrains Mono', monospace;
+}
+#services .box p:hover{
+    color: yellow;
+}
+/* utility class */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 14px;
+    font-family: 'Goblin One', cursive;
+}
+.h-primary:hover{
+color: rgb(248, 88, 88);
+}
+.h-first{
+    font-size: 2.8rem;
+    margin: 76px 0px 0px 0px;
+    padding: 14px;
+    font-family: 'Goblin One', cursive;
+}
+.h-first:hover{
+color: rgb(248, 88, 88);
+}
+.h-secondary:hover{
+    color: rgb(248, 88, 88);
+}
+.h-secondary{
+    font-size: 1.9rem;
+    padding: 14px;
+    font-family: 'Goblin One', cursive;
+}
+.btn{
+    padding: 16px 73px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 20px;
+    font-size: 2.9rem;
+    border-radius: 26px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(115, 115, 252);
+    color: yellow;
+}
+    .center{
+            text-align: center;
+    }
+    /* clients section */
+    #client-section{
+        height: 344px;
+    }
+    #client-section::before{
+        content: "";
+        position:absolute;
+        background: url('./img/bg01.jpg');
+        width: 100%;
+        height: 28%;
+        z-index: -1;
+        opacity:0.5 ;
+    }
+    #clients{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #clients img{
+        height: 100px;
+        
+    }
+    .client-item{
+        padding:34px;
+    }
+    /* contact section  */
+    #contact{
+        position: relative;
+    }
+    #contact::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.8;
+        background: url('./img/contact\ now.jpg') no-repeat center center/cover;
+    }
+
+    #contact-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 34px;
+
+    }
+
+    #contact-box input,
+    #contact-box textarea{
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        border-radius: 14px;
+        font-family: 'Cormorant Upright', serif;
+
+    }
+    #contact-box input:hover,
+    #contact-box textarea:hover{
+      background-color: rgb(167, 167, 247);
+      color: red;
+
+    }
+    #contact-box form{
+        width: 40%;
+    }
+    #contact-box label{
+        font-size: 2.3rem;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        margin: 5px;
+        padding: 5px;
+    }
+    #contact-box label:hover{
+        color: yellow;
+    }
